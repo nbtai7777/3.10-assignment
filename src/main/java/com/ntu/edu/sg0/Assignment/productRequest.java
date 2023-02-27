@@ -1,22 +1,26 @@
 package com.ntu.edu.sg0.Assignment;
 
-public class Product {
+class productRequest {
     private String name;
-    private double price;
+    private float price;
     private String description;
 
-    public Product(String string, double d, String string2) {
+    public productRequest(String name, float price, String description) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
     }
+
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-    public double getPrice() {
+    public float getPrice() {
         return price;
     }
-    public void setPrice(double price) {
+    public void setPrice(float price) {
         this.price = price;
     }
     public String getDescription() {
